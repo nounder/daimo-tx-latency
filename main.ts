@@ -22,6 +22,8 @@ const {
   USDC_AMOUNT = "0.02",
 
   TRANSFERS_COUNT = "10",
+
+  RECIPIENT_ADDR,
 } = process.env
 
 function track(event: Record<string, any>) {
@@ -37,6 +39,8 @@ const httpProvider = new ethers.JsonRpcProvider(ETH_RPC_HTTP_URL)
 const wsProvider = new ethers.WebSocketProvider(ETH_RPC_WS_URL)
 
 const wallet = new ethers.Wallet(WALLET_PRIVATE_KEY, httpProvider)
+
+console.log("Wallet address:", wallet.address)
 
 /**
  * Manually build and broadcast transaction.
@@ -84,8 +88,6 @@ async function broadcastUSDC_lowlevel(
 
   const txObj = ethers.Transaction.from(pop)
   const signedTx = await wallet.signTransaction(txObj)
-
-  await fetch("http://example.com")
 
   const t = performance.now()
   const txHash = await httpProvider.send("eth_sendRawTransaction", [
@@ -197,7 +199,7 @@ async function main() {
 
     const txHash = await broadcastUSDC_lowlevel(
       wallet,
-      "0xf45e49024CA12c7C19934b8188cc4b2beD794427",
+      RECIPIENT_ADDR,
       amount,
       ERC20_CONTRACT_ADDR,
       httpProvider,
