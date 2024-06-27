@@ -28,6 +28,6 @@ Make sure you have `deno` and `duckdb` installed
 deno run -A main.ts | tee /dev/tty | rg -r '' '\t' > out/events.jsonl
 
 # dump stats
-duckdb < out/events.sql
+duckdb < events.sql
 ```
 
