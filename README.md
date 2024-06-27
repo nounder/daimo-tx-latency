@@ -9,21 +9,25 @@ calls necessary to make a transaction (gas, block number, nonce) were done
 outside of timing window for higher measurement accuracy.
 
 
-# Usage
+# Configure
 
-```
+```sh
 # setup dotenv file
 cp .env.example .env
 
 # edit the config according to comments inside
 vim .env
-
-# run the script
-deno run -A main.ts | tee /dev/tty | rg -r '' '\t' > events.jsonl
-
-# dump stats
-duckdb < events.sql
-# 
+```
 
 Make sure you have `deno` and `duckdb` installed
+
+# Usage
+
+```sh
+# start broadcasting and tracking transactions
+deno run -A main.ts | tee /dev/tty | rg -r '' '\t' > out/events.jsonl
+
+# dump stats
+duckdb < out/events.sql
+```
 

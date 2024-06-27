@@ -1,5 +1,5 @@
 create temp table events as
-select  t::timestamp as t, * from read_json_auto('./events.jsonl');
+select t::timestamp as t, * from read_json_auto('./out/events.jsonl');
 
 select e, s, count(*) from events group by e, s  order by count(*) desc;
 
