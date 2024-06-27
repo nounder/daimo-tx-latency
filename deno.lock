@@ -1,0 +1,110 @@
+{
+  "version": "3",
+  "packages": {
+    "specifiers": {
+      "npm:ethers@6.13.1": "npm:ethers@6.13.1"
+    },
+    "npm": {
+      "@adraffy/ens-normalize@1.10.1": {
+        "integrity": "sha512-96Z2IP3mYmF1Xg2cDm8f1gWGf/HUVedQ3FMifV4kG/PQ4yEP51xDtRAEfhVNt5f/uzpNkZHwWQuUcu6D6K+Ekw==",
+        "dependencies": {}
+      },
+      "@noble/curves@1.2.0": {
+        "integrity": "sha512-oYclrNgRaM9SsBUBVbb8M6DTV7ZHRTKugureoYEncY5c65HOmRzvSiTE3y5CYaPYJA/GVkrhXEoF0M3Ya9PMnw==",
+        "dependencies": {
+          "@noble/hashes": "@noble/hashes@1.3.2"
+        }
+      },
+      "@noble/hashes@1.3.2": {
+        "integrity": "sha512-MVC8EAQp7MvEcm30KWENFjgR+Mkmf+D189XJTkFIlwohU5hcBbn1ZkKq7KVTi2Hme3PMGF390DaL52beVrIihQ==",
+        "dependencies": {}
+      },
+      "@types/node@18.15.13": {
+        "integrity": "sha512-N+0kuo9KgrUQ1Sn/ifDXsvg0TTleP7rIy4zOBGECxAljqvqfqpTfzx0Q1NUedOixRMBfe2Whhb056a42cWs26Q==",
+        "dependencies": {}
+      },
+      "aes-js@4.0.0-beta.5": {
+        "integrity": "sha512-G965FqalsNyrPqgEGON7nIx1e/OVENSgiEIzyC63haUMuvNnwIgIjMs52hlTCKhkBny7A2ORNlfY9Zu+jmGk1Q==",
+        "dependencies": {}
+      },
+      "ethers@6.13.1": {
+        "integrity": "sha512-hdJ2HOxg/xx97Lm9HdCWk949BfYqYWpyw4//78SiwOLgASyfrNszfMUNB2joKjvGUdwhHfaiMMFFwacVVoLR9A==",
+        "dependencies": {
+          "@adraffy/ens-normalize": "@adraffy/ens-normalize@1.10.1",
+          "@noble/curves": "@noble/curves@1.2.0",
+          "@noble/hashes": "@noble/hashes@1.3.2",
+          "@types/node": "@types/node@18.15.13",
+          "aes-js": "aes-js@4.0.0-beta.5",
+          "tslib": "tslib@2.4.0",
+          "ws": "ws@8.17.1"
+        }
+      },
+      "tslib@2.4.0": {
+        "integrity": "sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==",
+        "dependencies": {}
+      },
+      "ws@8.17.1": {
+        "integrity": "sha512-6XQFvXTkbfUOZOKKILFG1PDK2NDQs4azKQl26T0YS5CxqWLgXajbPZ+h4gZekJyRqFU8pvnbAbbs/3TgRPy+GQ==",
+        "dependencies": {}
+      }
+    }
+  },
+  "redirects": {
+    "https://deno.land/x/random_number/mod.ts": "https://deno.land/x/random_number@2.0.0/mod.ts"
+  },
+  "remote": {
+    "https://cdn.ethers.io/lib/ethers-5.2.esm.min.js": "1fad1630106c44488380d2fd6f0c673b85ee09273567b1df422f89c3f8fbb2c1",
+    "https://deno.land/std@0.224.0/dotenv/mod.ts": "0180eaeedaaf88647318811cdaa418cc64dc51fb08354f91f5f480d0a1309f7d",
+    "https://deno.land/std@0.224.0/dotenv/parse.ts": "09977ff88dfd1f24f9973a338f0f91bbdb9307eb5ff6085446e7c423e4c7ba0c",
+    "https://deno.land/std@0.224.0/dotenv/stringify.ts": "275da322c409170160440836342eaa7cf012a1d11a7e700d8ca4e7f2f8aa4615",
+    "https://deno.land/std@0.81.0/async/delay.ts": "35957d585a6e3dd87706858fb1d6b551cb278271b03f52c5a2cb70e65e00c26a",
+    "https://deno.land/x/async@v2.1.0/barrier.ts": "6a5ce735fffbe87a354e36875f2dda94ff23d55bf6eafc16b66d0e8ec49ff773",
+    "https://deno.land/x/async@v2.1.0/lock.ts": "276c97fb7e9e64632bdbb1ab37f82c70eec1bdefde048faa671201ac55023687",
+    "https://deno.land/x/async@v2.1.0/mod.ts": "7d42b09f82ad96ef40fe71c0d1142233fb713f203ea23ddfc2b71601f2a9bbda",
+    "https://deno.land/x/async@v2.1.0/mutex.ts": "782792457021425da571b8f30d6c62f7dc1cdf83d7299257343d57cac7357e27",
+    "https://deno.land/x/async@v2.1.0/notify.ts": "8b4150ca1063586084825a34e997b845ccbe5014aed69327489e1fc89569ec0e",
+    "https://deno.land/x/async@v2.1.0/queue.ts": "8ef2e16aa4e257b4104b20adb945273b153a433dc0bdf0d6cc34af92f22735a5",
+    "https://deno.land/x/async@v2.1.0/rw_lock.ts": "faa5f74729237d2308eb491f8e4fa2c14010bff17d7ace6f7955bf6a165a9f63",
+    "https://deno.land/x/async@v2.1.0/semaphore.ts": "dd2ecbb3441bd59ada4494f327cb9caa143a8ad699df5f10054057404db8e733",
+    "https://deno.land/x/async@v2.1.0/stack.ts": "5336e0321f9a7c5134fd4fcac1077f09a51487b4197159f28b38a64b1f8f97a9",
+    "https://deno.land/x/async@v2.1.0/state.ts": "a71692b72371239120b196d0c6a249631bab867dd499e85c422c2e5ec9695999",
+    "https://deno.land/x/async@v2.1.0/testutil.ts": "5ba512c6f14b7b319f320e149970ca8944115a35f4312b697ae427250d27fb6d",
+    "https://deno.land/x/async@v2.1.0/wait_group.ts": "e1b4f7f1210c9e8c65d3ee1d8cab8155b33327d3daba79b124ebb54b5ee6d15e",
+    "https://deno.land/x/random_number@2.0.0/mod.ts": "83010e4a0192b015ba4491d8bb8c73a458f352ebc613b847ff6349961d1c7827",
+    "https://dev.jspm.io/ethers": "82661f7e38b423b8b0e18248d40eb4b14a59e0ff38aa2c00ba405bd10d183567",
+    "https://dev.jspm.io/npm:@adraffy/ens-normalize@1.10.0": "2ddcf19894eb2827de3f2c2e547c85bd3fc5b4881b096ff832843f49f9c0d542",
+    "https://dev.jspm.io/npm:@noble/curves@1.2.0/_/fbe66d1b.js": "9f689610790337372173dadf53e9864bd8efc09920842f7e3b89687c85ec32aa",
+    "https://dev.jspm.io/npm:@noble/curves@1.2.0/_shortw_utils": "742b4032828e223572319812308baaba7a6e3cd9efab5b5f0ba0d4043ec4155b",
+    "https://dev.jspm.io/npm:@noble/curves@1.2.0/abstract/curve": "e0acb76f8b7d547549da49e938ab187c19f357f47de84fe09b7ace64719f962d",
+    "https://dev.jspm.io/npm:@noble/curves@1.2.0/abstract/hash-to-curve": "665196369700cfa67a715c522b66b05283e8f76b94ee8a3c4bdfa69b54d4122e",
+    "https://dev.jspm.io/npm:@noble/curves@1.2.0/abstract/modular": "b5cafaf06ef4a19f60a8fc2badcf3584462f2d862050790b6af60948c1da8646",
+    "https://dev.jspm.io/npm:@noble/curves@1.2.0/abstract/weierstrass": "011291202cc811206f5c6076a67fe0d0b496ef0c1fff396aa9df0820569fc827",
+    "https://dev.jspm.io/npm:@noble/curves@1.2.0/secp256k1": "32ee6e1227a8fa2974e8c0381a1fea597e639a7d0779773b702d972f7014d9bf",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/_/547a1be0.js": "2abbeab5d171b373efdf41c04fe3109a3829d608a055c1f688deae06cdd1377c",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/_assert": "504ff57be2814fcb04f799c302215d2c463bfc86c578153bfdc1b11f1b753089",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/_sha2": "cf5b9f7789eb1a4a476248a4e921a64fd8e0045ad1359eb9709479921aae4014",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/crypto": "4411c17e04b3561af943202527365d0c8c1e28363aa7112967f5442bbcc8bf5e",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/hmac": "c89774d76898e4eb83f2ca729582b3febc01a1d172943b962cc7ca2d1bc34e59",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/pbkdf2": "5a65c250e63c9cd1e02bfe71a6a51c9590ae9339d14936cd75f5a54ce3de9c76",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/ripemd160": "c3a0eb0cccc4c5c14ccedca117a8a849378324f4a27cf2536e10a4f271a443ec",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/scrypt": "06382cdd0cc1a1b1969afeb3de757169cddef41e5448f5ab514d8e72398bd518",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/sha256": "5e45eca136b7487a60ca2160195296d9ba56527052ec75f706ea162a6189f426",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/sha3": "6b96fac23fdb1cae5a237aec2e142d4dd9342ad5e4749399f3330a42614500ac",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/sha512": "b14abc65be632677de87c2dc43d08f0473fead3979fede9e000648f5a13aea7e",
+    "https://dev.jspm.io/npm:@noble/hashes@1.3.2/utils": "4aa1159928485d500a48499d1e81e05c57fb4ee527592b9c9f8d294a7aed3c3f",
+    "https://dev.jspm.io/npm:aes-js@4.0.0-beta.5": "1b169d7d63d4b033e847ec942b52da2bfeb315ca51ef643cd543b3f77dc60762",
+    "https://dev.jspm.io/npm:ethers@6.9.0": "68ebca44b7dc093d3859c4f6344ad2abe9fc04a9d6576b3cebf9887c16ed93b4",
+    "https://dev.jspm.io/npm:ethers@6.9.0/_/5eJrnJgU.js": "d821be7977c27d765e0b0ddf3e5bbe1afe80cccf12f13ad700c3fb7221a8381a",
+    "https://dev.jspm.io/npm:ethers@6.9.0/_/AUp_9qAH.js": "2ee2b54f905d976982b0a366b46ca8c4ea6085f4a6c7cdfd32f7319ef24bbb08",
+    "https://dev.jspm.io/npm:ethers@6.9.0/_/Q74wXFeH.js": "991276319dc11fae63a16462799acd6edd69e52707111c591d966af08674e0af",
+    "https://dev.jspm.io/npm:ethers@6.9.0/abi": "b1d9cde17b311ee38526ba3e7bbdbbee39dac4b4b46016115c66b38cda299ca0",
+    "https://dev.jspm.io/npm:ethers@6.9.0/address": "b27f6e800f86354aa481c01cdf2893c55c1a119db51424675af5074dac702a78",
+    "https://dev.jspm.io/npm:ethers@6.9.0/constants": "f8819fec51237b12631c27693cbbb49f11840f418d6b1ca12338e981d024f67d",
+    "https://dev.jspm.io/npm:ethers@6.9.0/crypto": "4a84573a7b756f0f1eb853e0ed248035feadfe75c386cf1db78aa041e8d04d78",
+    "https://dev.jspm.io/npm:ethers@6.9.0/hash": "a1198a08f6a5f58fc13ae56f28811cc49f2273016dfdb9724c0ebee41edd50ca",
+    "https://dev.jspm.io/npm:ethers@6.9.0/providers": "948720d3b98b9788ca9fb9dbc6e36d14983c633d95c0e602ca6c78db73191809",
+    "https://dev.jspm.io/npm:ethers@6.9.0/transaction": "ca3fcddc26b26d919f9adb0ff9ddebf87d4f667cfcead338300aa29a223cf1e6",
+    "https://dev.jspm.io/npm:ethers@6.9.0/wallet": "2ba6e4c46f1eecba41e53bc2810a7dd4d8099bcd6bb40c2e6ba3d969ba423b65",
+    "https://dev.jspm.io/npm:ethers@6.9.0/wordlists": "fe06e31d769763f88fa7db1b2c8ff23458b9aa4a932f06e0c79bd7d32c074789"
+  }
+}
