@@ -32,7 +32,7 @@ select distinct
         select avg(extract(ms from (t.block_time - t.broadcast_time)))::int || ' ms'
         from times as t
         where t.origin = rt.origin
-    ) as 'block_ts>rpc',
+    ) as 'send>block_ts',
 
     (
         select avg(extract(ms from (t.rpc_time - t.block_time)))::int || ' ms'
